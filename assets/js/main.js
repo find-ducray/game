@@ -81,14 +81,14 @@ function finishGame(win = true)
         $('.win-popup').fadeIn()
         setTimeout(function (){
             winMusic.play() 
-        },1200)
+        },1000)
     }
     else 
     {
         $('.lose-popup').fadeIn()
         setTimeout(function (){
             loseMusic.play()
-        },1200)
+        },1000)
         
     }
     
