@@ -20,10 +20,7 @@ $('.play-btn').on('click',function(){
     // background.play();
     // startMusic.pause()
     startSound(background,true)
-    
-    setTimeout(function(){
-        loseMusic.play()
-    },60000);
+
 });
 
 
@@ -54,10 +51,8 @@ function scorePass(item_id) {
 
     if (level == 6)
     {
-        background.pause()
         clearInterval(questionInterval)
         finishGame()
-               
     }
 }
 
@@ -67,7 +62,6 @@ function ticTic()
     duration-- ;
     if (duration == 0)
     {
-        background.pause()
         clearInterval(questionInterval)
         finishGame(false)
         return ;
@@ -79,6 +73,7 @@ function ticTic()
 
 function finishGame(win = true)
 {
+    background.pause()
     $('.play-page').fadeOut(1000);
     if(win)
     {
