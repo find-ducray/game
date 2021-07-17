@@ -52,7 +52,7 @@ function scorePass(item_id) {
     {
         background.pause()
         clearInterval(questionInterval)
-        setTimeout(finishGame,1500)
+        finishGame()
     }
 }
 
