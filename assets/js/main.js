@@ -80,9 +80,7 @@ function finishGame(win = true)
     {
         correctTrack.pause();
         $('.win-popup').fadeIn()
-        setTimeout(function (){
-            winMusic.play() 
-        },1000)
+        winMusic.play() 
     }
     else 
     {
@@ -95,7 +93,7 @@ function finishGame(win = true)
     
     setTimeout(function (){
         window.location.reload()
-    },5000)
+    },5500)
 }
 
 $(window).on('load',function(){
