@@ -53,6 +53,7 @@ function scorePass(item_id) {
         background.pause()
         clearInterval(questionInterval)
         finishGame()
+               
     }
 }
 
@@ -74,12 +75,23 @@ function ticTic()
 
 function finishGame(win = true)
 {
-    correctTrack.pause();
-    setTimeout(function (){
-        win ? winMusic.play() : loseMusic.play()
-    },1000)
-    $('.play-page').fadeOut(500);
-    win ? $('.win-popup').fadeIn(500) :$('.lose-popup').fadeIn(500)
+    $('.play-page').fadeOut();
+    if(win)
+    {
+        setTimeout(function (){
+            winMusic.play() 
+            $('.win-popup').fadeIn()
+        },2000)
+    }
+    else 
+    {
+        setTimeout(function (){
+           loseMusic.play()
+            $('.lose-popup').fadeIn()
+        },2000)
+        
+    }
+    
     setTimeout(function (){
         window.location.reload()
     },5000)
