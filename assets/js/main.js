@@ -88,6 +88,7 @@ function finishGame(win = true)
     }
     else 
     {
+        correctTrack.pause();
         $('.lose-popup').fadeIn()
         loseMusic.play()
     }
