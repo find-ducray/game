@@ -17,6 +17,10 @@ $('.play-btn').on('click',function(){
     }, 1000);
     $('.play-page').fadeIn(500);
     $('.start-page').fadeOut(500);
+    winMusic.play();
+    loseMusic.play();
+    winMusic.pause();
+    loseMusic.pause();
     // background.play();
     // startMusic.pause()
     startSound(background,true)
