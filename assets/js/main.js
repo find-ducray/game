@@ -75,20 +75,20 @@ function ticTic()
 
 function finishGame(win = true)
 {
-    $('.play-page').fadeOut();
+    $('.play-page').fadeOut(1000);
     if(win)
     {
+        $('.win-popup').fadeIn()
         setTimeout(function (){
             winMusic.play() 
-            $('.win-popup').fadeIn()
-        },2000)
+        },1200)
     }
     else 
     {
+        $('.lose-popup').fadeIn()
         setTimeout(function (){
-           loseMusic.play()
-            $('.lose-popup').fadeIn()
-        },2000)
+            loseMusic.play()
+        },1200)
         
     }
     
