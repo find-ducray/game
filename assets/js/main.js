@@ -78,6 +78,7 @@ function finishGame(win = true)
     $('.play-page').fadeOut(1000);
     if(win)
     {
+        correctTrack.pause();
         $('.win-popup').fadeIn()
         setTimeout(function (){
             winMusic.play() 
