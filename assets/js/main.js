@@ -85,10 +85,7 @@ function finishGame(win = true)
     else 
     {
         $('.lose-popup').fadeIn()
-        setTimeout(function (){
-            loseMusic.play()
-        },1000)
-        
+        loseMusic.play()
     }
     
     setTimeout(function (){
