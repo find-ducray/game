@@ -20,6 +20,10 @@ $('.play-btn').on('click',function(){
     // background.play();
     // startMusic.pause()
     startSound(background,true)
+    
+    setTimeout(function(){
+        loseMusic.play()
+    },60000);
 });
 
 
